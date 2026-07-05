@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Secure Contact Portal Backend",
   "type": "module",
-  "main": "src/server.js",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon",
-    "start": "node src/server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
