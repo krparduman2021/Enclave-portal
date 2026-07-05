@@ -18,7 +18,7 @@ const api = axios.create({
 
 export const submitContact = async (formData) => {
   try {
-    const response = await api.post("/contact", formData);
+    const response = await api.post("/api/contact", formData);
 
     return response.data;
   } catch (error) {
@@ -42,7 +42,7 @@ export const submitContact = async (formData) => {
 
 export const getContacts = async () => {
   try {
-    const response = await api.get("/admin/contacts");
+    const response = await api.get("/api/admin/contacts");
 
     return response.data;
   } catch (error) {
@@ -66,7 +66,7 @@ export const getContacts = async () => {
 export const deleteContact = async (id) => {
   try {
     const response = await api.delete(
-      `/admin/contacts/${id}`
+      `/api/admin/contacts/${id}`
     );
 
     return response.data;
